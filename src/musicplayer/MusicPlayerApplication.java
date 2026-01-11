@@ -4,9 +4,11 @@ package musicplayer;
 import musicplayer.manager.PlaylistManager;
 import musicplayer.models.Song;
 
+import java.util.List;
+
 public class MusicPlayerApplication {
     private static MusicPlayerApplication instance = null;
-    private java.util.List<Song> songLibrary;
+    private List<Song> songLibrary;
 
     private MusicPlayerApplication() {
         songLibrary = new java.util.ArrayList<>();
