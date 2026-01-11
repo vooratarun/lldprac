@@ -1,0 +1,51 @@
+clasess:
+
+1. Product
+    sku,name, price
+2. ProductFactory
+   return new Product(sku, name, price);
+
+3. Inventory interface
+       addProduct(product, quantity)
+       removeProduct(product, quantity)
+       getProductQuantity(product)
+       listProducts()
+4. Dbinventory extends Inventor
+        stock    = new HashMap<>();
+        products = new HashMap<>();
+5. inventoryManager
+    InventoryStore store
+    addStock(product, quantity)
+    removeStock(product, quantity)
+    getStock(product)
+    getAvailableProducts()
+
+
+6. ReplenishStrategy interface
+         replenish(inventoryManager, product)
+7. ThresholdReplenishStrategy implements ReplenishStrategy
+8. Darkstore
+    inventoryManager
+    replenishStrategy
+9. DarkstoreManager
+    list of Darkstores
+10. Cart
+    list of Products
+11. User
+    cart
+    name
+12. Delivery partner
+    name
+
+13. Order
+    items
+    partner
+
+14. OrderManager
+    placeOrder(user, darkstore, deliveryPartner)
+
+15. ZeptoHelper
+    DarkstoreManager darkstoreManager
+    OrderManager orderManager
+    createUser(name)
+
