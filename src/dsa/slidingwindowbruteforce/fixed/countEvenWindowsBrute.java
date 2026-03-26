@@ -1,7 +1,4 @@
-package dsa.slidingwindow.fixed;
-
-import java.util.ArrayList;
-import java.util.List;
+package dsa.slidingwindowbruteforce.fixed;
 
 public class countEvenWindowsBrute {
 

@@ -1,4 +1,4 @@
-package dsa.twopointer;
+package dsa.twopointerbruteforce;
 
 import java.util.HashMap;
 import java.util.Map;

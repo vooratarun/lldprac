@@ -9,7 +9,6 @@ public class SubarraySumKBrute {
 
             for (int j = i; j < nums.length; j++) {
                 sum += nums[j];
-
                 if (sum == k) {
                     count++;
                 }

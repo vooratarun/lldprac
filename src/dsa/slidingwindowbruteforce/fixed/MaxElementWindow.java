@@ -1,8 +1,7 @@
-package dsa.slidingwindow.fixed;
+package dsa.slidingwindowbruteforce.fixed;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 public class MaxElementWindow {
 

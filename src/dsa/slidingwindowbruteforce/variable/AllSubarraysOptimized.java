@@ -1,4 +1,4 @@
-package dsa.slidingwindow.variable;
+package dsa.slidingwindowbruteforce.variable;
 
 import java.util.*;
 

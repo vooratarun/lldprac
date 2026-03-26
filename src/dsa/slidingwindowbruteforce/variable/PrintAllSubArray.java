@@ -1,4 +1,4 @@
-package dsa.slidingwindow.variable;
+package dsa.slidingwindowbruteforce.variable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,7 +39,7 @@ public class PrintAllSubArray {
 
     public static void PrintAllSubArrayLengthK(int[] arr, int k) {
 
-        for( int i = 0; i < arr.length -k;i++){
+        for( int i = 0; i <= arr.length -k;i++){
             for( int j = i; j < i + k;j++){
                 System.out.print(arr[j] + " ");
             }

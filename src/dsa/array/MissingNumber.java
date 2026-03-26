@@ -3,7 +3,7 @@ package dsa.array;
 public class MissingNumber {
 
     public static void main(String[] args) {
-        int[] arr = {1, 2, 4, 5, 6};
+        int[] arr = {1, 2, 6, 5, 4};
         int missingNumber = findMissingNumber(arr);
         System.out.println("Missing number: " + missingNumber);
     }

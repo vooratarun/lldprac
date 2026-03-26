@@ -1,4 +1,4 @@
-package dsa.slidingwindow.fixed;
+package dsa.slidingwindowbruteforce.fixed;
 
 public class MaxSumSubarrayK {
 
