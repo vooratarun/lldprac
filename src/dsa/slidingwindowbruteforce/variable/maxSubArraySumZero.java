@@ -3,6 +3,9 @@ package dsa.slidingwindowbruteforce.variable;
 public class maxSubArraySumZero {
     public static void main(String[] args) {
 
+        int[] array = {1,2,3,-3,4};
+        System.out.println(maxSubarraySumZero_brute(array));
+
     }
 
     public static int maxSubarraySumZero_brute(int[] arr) {

@@ -6,9 +6,12 @@ import java.util.Set;
 public class LongestSubStrWithoutRepeatingChar {
     public static void main(String[] args) {
 
+        String  s = "abbc";
+        System.out.println(LongestSubStrWithoutRepeatingChar(s));
+
     }
 
-    public static int longestSubstring(String s) {
+    public static int LongestSubStrWithoutRepeatingChar(String s) {
         int maxLen = 0;
 
         for (int i = 0; i < s.length(); i++) {

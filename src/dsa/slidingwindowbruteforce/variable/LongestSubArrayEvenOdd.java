@@ -1,5 +1,6 @@
 package dsa.slidingwindowbruteforce.variable;
 
+// 👉 “Longest subarray with equal number of even and odd elements”
 public class LongestSubArrayEvenOdd {
 
     public static void main(String[] args) {
