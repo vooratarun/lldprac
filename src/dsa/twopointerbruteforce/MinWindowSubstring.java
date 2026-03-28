@@ -8,7 +8,7 @@ public class MinWindowSubstring {
 
         String str = "abcde";
         int minLength = Integer.MAX_VALUE;
-        String  t = "abe";
+        String  t = "ab";
         String result= "";
 
         for(int i =0 ; i< str.length();i++){
@@ -48,4 +48,26 @@ public class MinWindowSubstring {
 
         return true;
     }
+
+    private static boolean isValid(String sub, String t) {
+        int[] freq = new int[128];
+
+        for (char c : t.toCharArray()) {
+            freq[c]++;
+        }
+
+        for (char c : sub.toCharArray()) {
+            if (freq[c] > 0) {
+                freq[c]--;
+            }
+        }
+
+        for (int f : freq) {
+            if (f > 0) return false;
+        }
+
+        return true;
+    }
+
+
 }

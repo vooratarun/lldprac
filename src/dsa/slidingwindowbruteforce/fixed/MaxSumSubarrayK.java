@@ -7,13 +7,13 @@ public class MaxSumSubarrayK {
 
         int[] arr = {2, 1, 5, 1, 3, 2};
         int k = 3;
-        MaxSumSubarrayK(arr,3);
+        MaxSumSubarrayKOPtimal(arr,3);
         bruteForce(arr,3);
 
 
     }
 
-    public static void MaxSumSubarrayK(int[] array, int k) {
+    public static void MaxSumSubarrayKOPtimal(int[] array, int k) {
        int n = array.length;
        int left =0;
        int right = 0;

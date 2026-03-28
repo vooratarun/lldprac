@@ -27,7 +27,7 @@ public class CountOCurences {
             int mid = low + (high - low)/2;
             if(arr[mid] == target){
                 ans = mid;
-                high = mid -1;
+                high = mid -1; // move left
             }else if (arr[mid] > target){
                     high = mid -1;
             } else {
@@ -48,7 +48,7 @@ public class CountOCurences {
 
             if(arr[mid] == target){
                 ans = mid;
-                low = mid + 1;
+                low = mid + 1; // move right
             } else if (arr[mid] > target){
                 high = mid -1;
             }else{

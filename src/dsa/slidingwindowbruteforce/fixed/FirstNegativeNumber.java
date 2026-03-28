@@ -1,7 +1,9 @@
 package dsa.slidingwindowbruteforce.fixed;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 public class FirstNegativeNumber {
 
@@ -61,4 +63,31 @@ public class FirstNegativeNumber {
         System.out.println(result);
 
     }
+
+    public static void firstNegativeWindowOptimal(int[] array, int k){
+
+        List<Integer> result = new ArrayList<>();
+        Queue<Integer> q  = new LinkedList<>();
+
+        int left = 0;
+        for(int right = 0; right < array.length;right++){
+
+            if(array[right] < 0){
+                q.offer(array[right]);
+            }
+
+            if(right -left +1 == k){
+                if(!q.isEmpty()){
+                    result.add(array[q.peek()]);
+                }else {
+                    result.add(0);
+                }
+            }
+        }
+
+
+
+    }
+
+
 }
