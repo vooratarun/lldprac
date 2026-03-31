@@ -36,15 +36,6 @@ public class QuickSort {
         return i + 1;
     }
 
-    public static void main(String[] args) {
-        int[] arr = {5, 2, 8, 1, 3};
-
-        quickSort(arr, 0, arr.length - 1);
-
-        for (int num : arr)
-            System.out.print(num + " ");
-    }
-
     public static int partitioning(int[] arr, int l, int h) {
 
         int pivot = arr[l];
@@ -70,4 +61,15 @@ public class QuickSort {
             arr[i] = arr[j];
             arr[j] = temp;
         }
-    }}
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {5, 2, 8, 1, 3};
+
+        quickSort(arr, 0, arr.length - 1);
+
+        for (int num : arr)
+            System.out.print(num + " ");
+    }
+}
+

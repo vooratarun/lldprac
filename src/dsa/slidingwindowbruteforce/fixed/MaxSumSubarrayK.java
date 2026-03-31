@@ -9,8 +9,31 @@ public class MaxSumSubarrayK {
         int k = 3;
         MaxSumSubarrayKOPtimal(arr,3);
         bruteForce(arr,3);
+        System.out.println(maxSum(arr,3));
 
 
+    }
+
+    public static int maxSum(int[] nums, int k) {
+        int windowSum = 0;
+        int maxSum = Integer.MIN_VALUE;
+
+        // first window
+        for (int i = 0; i < k; i++) {
+            windowSum += nums[i];
+        }
+
+        maxSum = windowSum;
+
+        // slide window
+        for (int i = k; i < nums.length; i++) {
+            windowSum += nums[i];       // add next
+            windowSum -= nums[i - k];   // remove left
+
+            maxSum = Math.max(maxSum, windowSum);
+        }
+
+        return maxSum;
     }
 
     public static void MaxSumSubarrayKOPtimal(int[] array, int k) {

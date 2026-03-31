@@ -87,4 +87,28 @@ public class SubArraySumEqualK {
 
         return count;
     }
+
+    public int subarraySumPrefixArrayCount(int[] nums, int k) {
+        int n = nums.length;
+
+        // build prefix
+        int[] prefix = new int[n + 1];
+        for (int i = 1; i <= n; i++) {
+            prefix[i] = prefix[i - 1] + nums[i - 1];
+        }
+
+        int count = 0;
+
+        // check all subarrays
+        for (int L = 0; L < n; L++) {
+            for (int R = L; R < n; R++) {
+
+                int sum = prefix[R + 1] - prefix[L];
+
+                if (sum == k) count++;
+            }
+        }
+
+        return count;
+    }
 }
