@@ -1,9 +1,9 @@
 clasess:
 
-1. Product
+1. lld.Product
     sku,name, price
-2. ProductFactory
-   return new Product(sku, name, price);
+2. lld.ProductFactory
+   return new lld.Product(sku, name, price);
 
 3. Inventory interface
        addProduct(product, quantity)
@@ -14,16 +14,16 @@ clasess:
         stock    = new HashMap<>();
         products = new HashMap<>();
 5. inventoryManager
-    InventoryStore store
+    lld.InventoryStore store
     addStock(product, quantity)
     removeStock(product, quantity)
     getStock(product)
     getAvailableProducts()
 
 
-6. ReplenishStrategy interface
+6. lld.ReplenishStrategy interface
          replenish(inventoryManager, product)
-7. ThresholdReplenishStrategy implements ReplenishStrategy
+7. lld.ThresholdReplenishStrategy implements lld.ReplenishStrategy
 8. Darkstore
     inventoryManager
     replenishStrategy
