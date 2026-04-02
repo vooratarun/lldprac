@@ -1,4 +1,4 @@
-package lld.streams;
+package lld.javastreams;
 
 import java.util.*;
 import java.util.stream.Collectors;

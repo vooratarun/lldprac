@@ -1,4 +1,4 @@
-package lld.streams;
+package lld.javastreams;
 
 import java.util.ArrayList;
 import java.util.Arrays;
